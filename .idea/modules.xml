@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/sinatra-bootstrap.iml" filepath="$PROJECT_DIR$/.idea/sinatra-bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Sinatra.iml" filepath="$PROJECT_DIR$/.idea/Sinatra.iml" />
     </modules>
   </component>
 </project>
