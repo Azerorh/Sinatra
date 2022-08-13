@@ -1,0 +1,29 @@
+<div class="card">
+	<div class="card-header">
+		<%= @post.author %>
+	</div>
+	<div class="card-body">
+		<h5 class="card-title"><%= @post.header %></h5>
+		<p class="card-text"><%= @post.content %></p>
+
+		<% @comments.each do |comment| %>
+			<div class="card">
+				<div class="card-header">
+					<%= comment.created_at %>
+				</div>
+				<div class="card-body">
+					<p class="card-text"><%= comment.comment %></p>
+				</div>
+			</div>
+			<br>
+		<% end %>
+
+		<form action="/<%= @post.id %>/comment/new" method="POST">
+			<div class="form-group">
+			    <label>Comment: </label>
+			    <textarea class="form-control" placeholder="Enter your commentary" name="comment[comment]" value="<%= @comment.comment %>" rows='6'></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+</div>

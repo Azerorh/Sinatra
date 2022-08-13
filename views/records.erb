@@ -1,0 +1,24 @@
+<h2>Records</h2>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Phone</th>
+			<th>Date and time</th>
+			<th>Barber</th>
+			<th>Color</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @clients.each do |client| %>
+			<tr>
+				<td><b><a href="/client/<%= client.id %>"><%= client.name %></a><b></td>
+				<td><%= client.phone %></td>
+				<td><%= client.datetime %></td>
+				<td><%= client.barber %></td>
+				<td><div class="table_color_block" style="background-color: <%= client.color %>;"></div></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

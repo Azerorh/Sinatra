@@ -1,0 +1,14 @@
+.table_color_block {
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+}
+.flexbox {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	flex-wrap: wrap;
+}
+.flexbox .card {
+	margin: 10px;
+}
